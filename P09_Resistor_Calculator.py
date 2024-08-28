@@ -1,3 +1,23 @@
+# File: main.py
+# Author: Armstrong Subero
+# Platform: Raspberry Pi Pico (RP2040) with MicroPython
+# Program: P09_Resistor Calculator
+# Interpreter: MicroPython (latest version)
+# Program Version: 1.0
+#
+# Program Description: This program calculates the total resistance of 
+#                      multiple resistors either in series or parallel. 
+#                      It prompts the user to input the number of resistors
+#                      and whether they are connected in series or parallel.
+#                      Based on the input, the program computes and displays
+#                      the total resistance.
+#
+# Hardware Description: No special hardware is required.
+#
+# Created: August 23rd, 2024, 6:25 PM
+# Last Updated: August 27th, 2024, 10:06 PM
+# Modified from example code by Dogan Ibrahim
+
 print("RESISTORS IN SERIES OR PARALLEL")
 print("===============================")
 yn = "y"
