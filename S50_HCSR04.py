@@ -1,3 +1,28 @@
+# File: main.py
+# Author: Armstrong Subero
+# Platform: Raspberry Pi Pico (RP2040) with MicroPython
+# Program: S50_Range_Finder
+# Interpreter: MicroPython (latest version)
+# Program Version: 1.0
+#
+# Program Description: This program uses an HC-SR04 ultrasonic distance sensor
+#                      to measure the distance to an object and display it in centimeters.
+#                      The sensor is powered with 5V, and a voltage divider is used to
+#                      safely connect the Echo pin to the Raspberry Pi Pico's GPIO pin.
+#                      The program triggers the sensor at a regular interval using a timer,
+#                      and calculates the distance based on the time it takes for the ultrasonic
+#                      pulse to return after hitting an object.
+# 
+# Hardware Description:
+#    HC-SR04 Ultrasonic Distance Sensor:
+#       - TRIG pin connected to GPIO 13
+#       - ECHO pin connected to GPIO 12 (via a voltage divider)
+#       - VCC pin connected to 5V
+#       - GND pin connected to GND
+# 
+# Created: August 28th, 2024, 2:00 PM
+# Last Updated: August 28th, 2024, 2:00 PM
+
 from machine import Timer, Pin
 import time
 
@@ -25,7 +50,7 @@ class Range_Finder:
         else:  # Falling edge detected
             self.pulse_duration = time.ticks_diff(time.ticks_us(), self.pulse_start) 
             self.flag = True  # Set the flag indicating a measurement is ready
-    
+
     def trigger_isr(self, t):
         # Timer callback function to trigger the ultrasonic pulse
         self.trig.value(1)
@@ -33,9 +58,17 @@ class Range_Finder:
         self.trig.value(0)
         
     def distance(self):
+        # Reset the flag
+        self.flag = False
+
         # Calculate the distance based on pulse duration
-        self.flag = False  # Reset the flag
-        return self.pulse_duration * 0.0343 / 2  # Convert time to distance in cm
+        distance_cm = (self.pulse_duration / 2) * 0.0343  # Convert time to distance in cm
+
+        # Filter out unrealistic readings
+        if distance_cm < 2 or distance_cm > 400:  # HC-SR04 range is 2 cm to 400 cm
+            return "Out of range"  # Return a message for out-of-range values
+
+        return distance_cm
 
 # Define trigger and echo pin numbers
 TRIGGER = 13
@@ -43,10 +76,16 @@ ECHO = 12
 
 # Create an instance of the Range_Finder class
 range_finder = Range_Finder(TRIGGER, ECHO)
-        
+
 while True:
     while not range_finder.flag:  # Wait until a measurement is ready
         pass
     
-    # Print the measured distance
-    print("{:.1f} cm".format(range_finder.distance()))
+    # Get and print the measured distance
+    result = range_finder.distance()
+    if isinstance(result, str):
+        print(result)
+    else:
+        print("{:.1f} cm".format(result))
+
+    time.sleep(0.5)  # Add a delay between readings
