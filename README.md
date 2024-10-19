@@ -69,10 +69,18 @@ These projects cover various topics, including mathematical operations, sorting 
 - **P28_Command_Pattern.py**: Implements a command pattern.
 - **P29_State_Pattern.py**: Implements a state pattern.
 - **Sorting algorithms**: `P30_Bubble_Sort.py`, `P31_Selection_Sort.py`, `P32_Insertion_Sort.py`, `P33_Heap_Sort.py`, `P34_Merge_Sort.py`, `P35_Quick_Sort.py`, `P36_Radix_Sort.py`, `P37_Bucketsort.py`
-- **Data structures**: `P38_List.py`, `P39_Array.py`, `P40_Stack.py`, `P41_Queue.py`, `P42_Hash_Table.py`, `P43_Dictionary.py`, `P44_BuiltInDataStructures.py`, `P45_Heap.py`, `P46_PriorityQueue.py`, `P47_BinaryTree.py`, `P48_BinarySearchTree.py`, `P49_RedBlackTree.py`, `P50_Trie.py`
-- **Caching and control systems**: `P51_LRU_Cache.py`, `P52_Decision_Tree.py`, `P53_Behavior_Tree.py`, `P54_State_Machine.py`, `P55_PID_Loop.py`, `P56_MPC.py`, `P57_MPC_MultiVariableControl.py`, `P58_A_Star.py`, `P59_A_Star.py`, `P60_K_Means.py`
+- **Data structures**: `P38_List.py`,
+`P39_Array.py`,
+`P40_Stack.py`,
+`P41_Queue.py`, `P42_Hash_Table.py`, `P43_Dictionary.py`, `P44_BuiltInDataStructures.py`, `P45_Heap.py`, `P46_PriorityQueue.py`, `P47_BinaryTree.py`, `P48_BinarySearchTree.py`, `P49_RedBlackTree.py`, `P50_Trie.py`
+- **Caching and control systems**: `P51_LRU_Cache.py`, `P52_Decision_Tree.py`, `P53_Behavior_Tree.py`, `P54_State_Machine.py`, `P55_PID_Loop.py`,
+`P56_MPC.py`, `P57_MPC_MultiVariableControl.py`, `P58_A_Star.py`,
+`P59_A_Star.py`,
+`P60_K_Means.py`
 - **Memory and loading**: `P61_Lazy_Loading.py`, `P62_Memory_Pool_Sensor_Buffers.py`
-- **Embedded systems**: `S01_Blink.py`, `S02_External_LED.py`, `S03_Timer.py`, `S04_Interrupt.py`, `S05_RGB_LED.py`, `S06_Rotating_LED.py`, `S08_Data_Logger.py`, `S09_PWM.py`, `S10_Fading_Led.py`, `S11_UART.py`, `S15_Dual_Cores.py`, `S16_Different_Blink_Rates.py`, `S17_Sharing_Data.py`, `S18_RTC.py`, `S19_Traffic_Light_Simulation.py`, `S20_Inline_Assembly.py`, `S21_Unique_Identifier.py`, `S22_Light_Dependent_Resistor.py`, `S23_Pot_Brightness_Control.py`, `S24_Simple_Buzzer_Alarm.py`, `S25_Melodies_Player.py`, `S30_Round_Robin_Scheduling.py`, `S31_Emergency_Buffer.py`, `S32_Cooperative_Multitasking.py`, `S33_Mailbox_Queues.py`, `S34_Task_Groups.py`, `S35_Task_Prioritzation.py`, `S36_Event_Semaphones.py`, `S37_Task_Management_System.py`, `S50_HCSR04.py`
+- **Embedded systems**: `S01_Blink.py`, `S02_External_LED.py`, `S03_Timer.py`, `S04_Interrupt.py`, `S05_RGB_LED.py`, `S06_Rotating_LED.py`, `S08_Data_Logger.py`,
+`S09_PWM.py`,
+`S10_Fading_Led.py`, `S11_UART.py`, `S15_Dual_Cores.py`, `S16_Different_Blink_Rates.py`, `S17_Sharing_Data.py`, `S18_RTC.py`, `S19_Traffic_Light_Simulation.py`, `S20_Inline_Assembly.py`, `S21_Unique_Identifier.py`, `S22_Light_Dependent_Resistor.py`, `S23_Pot_Brightness_Control.py`, `S24_Simple_Buzzer_Alarm.py`, `S25_Melodies_Player.py`, `S30_Round_Robin_Scheduling.py`, `S31_Emergency_Buffer.py`, `S32_Cooperative_Multitasking.py`, `S33_Mailbox_Queues.py`, `S34_Task_Groups.py`, `S35_Task_Prioritzation.py`, `S36_Event_Semaphones.py`, `S37_Task_Management_System.py`, `S50_HCSR04.py`
 
 ## How to Run
 
