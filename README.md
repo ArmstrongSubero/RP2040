@@ -91,7 +91,7 @@ These projects cover various topics, including mathematical operations, sorting 
 
 2. Connect your Raspberry Pi Pico to your computer via USB.
 
-3. Upload the desired project to the Pico using a tool such as Thonny (for MicroPython) or using `picotool` if using the C/C++ SDK.
+3. Upload the desired project to the Pico using a tool such as Thonny.
 
 ## Contributing
 
@@ -105,6 +105,6 @@ This repository is licensed under the MIT License. See the [LICENSE](LICENSE) fi
 
 For any questions or discussions related to PIC16 Projects:
 - **GitHub**: [ArmstrongSubero](https://github.com/ArmstrongSubero)
-- **Email**: [armstrong.subero@example.com](mailto:armstrong.subero@gmail.com)
+- **Email**: [armstrong.subero@gmail.com](mailto:armstrong.subero@gmail.com)
 
-If you find this repository helpful, please give it a star ⭐ and share it with others who might be interested in PIC16 microcontroller projects!
+If you find this repository helpful, please give it a star ⭐ and share it with others who might be interested in Raspberry Pi Pico microcontroller projects!
